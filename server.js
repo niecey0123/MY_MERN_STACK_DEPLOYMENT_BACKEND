@@ -8,8 +8,8 @@ const cors = require('cors');
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-app.use(express.json());
-app.use(cors()); 
+// app.use(express.json());
+// app.use(cors()); 
 
 const bookSchema = new mongoose.Schema({
     title: String,
